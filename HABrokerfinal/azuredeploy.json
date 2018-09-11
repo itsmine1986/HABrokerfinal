@@ -102,7 +102,7 @@
     "storageAccountName": "satrdsh01igacr",
     "storageAccountType": "Standard_LRS",
     "sqlClientUrl": "http://go.microsoft.com/fwlink/?LinkID=239648&clcid=0x409",
-    "vmPrefix": "",
+    "vmPrefix": "VmWTRdcbh",
     "p": {
       "broker": "[concat(' -existingBroker ', parameters('existingBrokerHostname'))]",
       "connstr": "[concat(' -primaryDbConnectionString \"', parameters('primaryDbConnectionString'), '\"')]",
