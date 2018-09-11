@@ -92,7 +92,7 @@
       "metadata": {
         "description": "The base URI where artifacts required by this template are located. When the template is deployed using the accompanying scripts, a private location in the subscription will be used and this value will be automatically generated."
       },
-      "defaultValue": "https://raw.githubusercontent.com/Azure/AzureStack-QuickStart-Templates/master/rds-deployment-ha-broker/"
+      "defaultValue": "https://raw.githubusercontent.com/itsmine1986/HABrokerfinal/master/HABrokerfinal/"
     }
   },
   "variables": {
@@ -133,7 +133,7 @@
       "type": "Microsoft.Network/networkInterfaces",
       "name": "[variables('brokerNicName')]",
       "location": "[resourceGroup().location]",
-      "dependsOn":  [],
+      "dependsOn": [],
       "properties": {
         "ipConfigurations": [
           {
@@ -176,7 +176,7 @@
             "sku": "[parameters('windowsServerVersion')]",
             "version": "latest"
           },
-      "osDisk": {
+          "osDisk": {
             "name": "MdOVmWTRdcbh02",
             "managedDisk": {
               "storageAccountType": "Standard_LRS"
