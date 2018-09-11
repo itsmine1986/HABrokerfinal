@@ -40,8 +40,8 @@ if ($UploadArtifacts) {
     if (($JsonParameters | Get-Member -Type NoteProperty 'parameters') -ne $null) {
         $JsonParameters = $JsonParameters.parameters
     }
-    $ArtifactsLocationName = '_artifactsLocation'
-    $ArtifactsLocationSasTokenName = '_artifactsLocationSasToken'
+    $ArtifactsLocationName = 'artifactsLocation'
+    $ArtifactsLocationSasTokenName = 'artifactsLocationSasToken'
     $OptionalParameters[$ArtifactsLocationName] = $JsonParameters | Select -Expand $ArtifactsLocationName -ErrorAction Ignore | Select -Expand 'value' -ErrorAction Ignore
     $OptionalParameters[$ArtifactsLocationSasTokenName] = $JsonParameters | Select -Expand $ArtifactsLocationSasTokenName -ErrorAction Ignore | Select -Expand 'value' -ErrorAction Ignore
 
