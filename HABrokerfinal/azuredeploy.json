@@ -133,7 +133,7 @@
       "type": "Microsoft.Network/networkInterfaces",
       "name": "[variables('brokerNicName')]",
       "location": "[resourceGroup().location]",
-      "dependsOn": [],
+      "dependsOn":  [],
       "properties": {
         "ipConfigurations": [
           {
